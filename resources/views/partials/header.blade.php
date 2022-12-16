@@ -6,16 +6,16 @@
             </div>
 
             <div class="menu_header d-flex">
-                <a href="">characters</a>
-                <a class="active" href="{{ route('comics')}}">comics</a>
-                <a href="">movies</a>
-                <a href="">tv</a>
-                <a href="">games</a>
-                <a href="">collectibles</a>
-                <a href="">videos</a>
-                <a href="">fans</a>
-                <a href="">news</a>
-                <a href="">shop</a>
+                <a class="{{Route::currentRouteName() === 'characters' ? 'active' : ''}}" href="">characters</a>
+                <a class="{{Route::currentRouteName() === 'comics' ? 'active' : ''}}" href="{{ route('comics')}}">comics</a>
+                <a class="{{Route::currentRouteName() === 'movies' ? 'active' : ''}}" href="">movies</a>
+                <a class="{{Route::currentRouteName() === 'tv' ? 'active' : ''}}" href="">tv</a>
+                <a class="{{Route::currentRouteName() === 'games' ? 'active' : ''}}" href="">games</a>
+                <a class="{{Route::currentRouteName() === 'collectibles' ? 'active' : ''}}" href="">collectibles</a>
+                <a class="{{Route::currentRouteName() === 'videos' ? 'active' : ''}}" href="">videos</a>
+                <a class="{{Route::currentRouteName() === 'fans' ? 'active' : ''}}" href="">fans</a>
+                <a class="{{Route::currentRouteName() === 'news' ? 'active' : ''}}" href="">news</a>
+                <a class="{{Route::currentRouteName() === 'shop' ? 'active' : ''}}" href="">shop</a>
             </div>
             <div class="search">
                 <input type="text" class="text-end" placeholder="Search" name="" id="">
