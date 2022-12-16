@@ -1,1 +1,107 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-stretch: semi-condensed;
+    font-weight: 600;
+
+}
+
+.container {
+    width: 80%;
+    max-width: 1300px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+
+    .logo img {
+        height: 80px;
+    }
+
+    a {
+        text-decoration: none;
+        padding: 2.75rem 1rem;
+        color: black;
+        text-transform: uppercase;
+
+        &:hover {
+            border-bottom: 5px solid #0282f9;
+            color: #0282f9;
+        }
+    }
+
+}
+
+footer {
+    .footer_top {
+        background-image: url(../images/footer-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .footer_menu {
+            background-image: url(../images/dc-logo-bg.png);
+            background-repeat: no-repeat;
+            background-position: right;
+
+            .row {
+                padding: 1rem 0 1.75rem 0;
+            }
+
+            li {
+                list-style: none;
+            }
+
+            h3 {
+                margin: 1rem 0;
+                text-transform: uppercase;
+                color: white;
+            }
+
+            a {
+                font-weight: 400;
+                text-decoration: none;
+                color: #797979;
+                line-height: 1rem;
+            }
+        }
+
+    }
+
+
+
+    .footer_bottom {
+        background-color: #464646;
+        padding: 1rem;
+
+        button {
+            padding: 0.5rem;
+            font-size: 1rem;
+            color: white;
+            text-transform: uppercase;
+            background: none;
+            border: 2px solid #0282f9;
+        }
+
+        h3 {
+            text-transform: uppercase;
+            color: #0282f9;
+            margin: 0.5rem;
+        }
+
+        img {
+            margin: 0.5rem;
+        }
+    }
+}
