@@ -1,5 +1,12 @@
 <header class="bg-white">
+    <div class="navbar_top">
+        <div class="container d-flex justify-content-end align-items-center">
+            <a href="">DC POWER&#8480; VISA&reg;</a>
+            <a href="">ADDITIONAL DC SITES ▼</a>
+        </div>
+    </div>
     <div class="container">
+
         <div class="navbar_header d-flex justify-content-between align-items-center">
             <div class="logo p-3">
                 <img src="{{ Vite::asset('resources/images/dc-logo.png')}}" alt="">
@@ -15,10 +22,12 @@
                 <a class="{{Route::currentRouteName() === 'videos' ? 'active' : ''}}" href="">videos</a>
                 <a class="{{Route::currentRouteName() === 'fans' ? 'active' : ''}}" href="">fans</a>
                 <a class="{{Route::currentRouteName() === 'news' ? 'active' : ''}}" href="">news</a>
-                <a class="{{Route::currentRouteName() === 'shop' ? 'active' : ''}}" href="">shop</a>
+                <a class="{{Route::currentRouteName() === 'shop' ? 'active' : ''}}" href="">shop <span class="triangle-down">▼</span></a>
             </div>
-            <div class="search">
-                <input type="text" class="text-end" placeholder="Search" name="" id="">
+
+            <div class="search text-end">
+                <input type="text" class="w-25" placeholder="" name="" id="search">
+                <label for="search">Search</label>
             </div>
         </div>
     </div>

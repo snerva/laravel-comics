@@ -25,6 +25,17 @@ img {
 }
 
 header {
+    .navbar_top {
+        background-color: #0282f9;
+
+        a {
+            text-decoration: none;
+            font-size: 12px;
+            padding: 0.5rem 0 0.5rem 3rem;
+            color: white;
+            text-transform: uppercase;
+        }
+    }
 
     .logo img {
         height: 80px;
@@ -45,14 +56,18 @@ header {
             border-bottom: 5px solid #0282f9;
             color: #0282f9;
         }
+
+        .triangle-down {
+            color: #0282f9;
+        }
     }
 
     .search {
         border-bottom: 2px solid #0282f9;
+        width: 120px;
 
         input {
             border-style: none;
-            color: #1c1c1c;
         }
     }
 
