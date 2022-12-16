@@ -7,7 +7,7 @@
 
             <div class="menu_header d-flex">
                 <a href="">characters</a>
-                <a class="active" href="">comics</a>
+                <a class="active" href="{{ route('comics')}}">comics</a>
                 <a href="">movies</a>
                 <a href="">tv</a>
                 <a href="">games</a>
@@ -16,6 +16,9 @@
                 <a href="">fans</a>
                 <a href="">news</a>
                 <a href="">shop</a>
+            </div>
+            <div class="search">
+                <input type="text" class="text-end" placeholder="Search" name="" id="">
             </div>
         </div>
     </div>
